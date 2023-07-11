@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying data</title>
+</head>
+<body>
+    <center>
+        <h1>Displaying data</h1>
+        <table border="3px">
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Location</td>
+                <td>Email</td>
+                <td>Re-Email</td>
+                <td>URL</td>
+            </tr>
+            {% for fo in SDA %}
+                <tr>
+                    <td>{{fo.name}}</td>
+                    <td>{{fo.age}}</td>
+                    <td>{{fo.loc}}</td>
+                    <td>{{fo.email}}</td>
+                    <td>{{fo.remail}}</td>
+                    <td>{{fo.url}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

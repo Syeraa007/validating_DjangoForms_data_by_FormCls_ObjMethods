@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validating using form cls obj methods</title>
+</head>
+<body>
+    <center>
+        <h1>Vaildating data by Form Class Object Method</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>{{SFO.as_table}}</table>
+            <input type="submit" value="Validate Data">
+        </form>
+    </center>
+</body>
+</html>
